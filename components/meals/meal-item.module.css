@@ -1,0 +1,66 @@
+.meal {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image img {
+  object-fit: cover;
+}
+
+.headerText {
+  padding: 1rem;
+}
+
+.headerText h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1a202c;
+}
+
+.headerText p {
+  margin: 0.5rem 0 0 0;
+  color: #4a5568;
+  font-style: italic;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.summary {
+  margin-bottom: 1rem;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+.actions {
+  text-align: right;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.actions a {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+  background-color: #ebf8ff;
+}
+
+.actions a:hover {
+  text-decoration: none;
+  background-color: #3182ce;
+  color: white;
+}
