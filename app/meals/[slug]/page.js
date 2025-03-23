@@ -20,7 +20,7 @@ export default async function MealsDetails({ params }) {
             <>
             <header className={styles.header}>
                 <div className={styles.image}>
-                    <Image fill src={meal.image || ''} alt={meal.title || 'Meal'} />
+                    <Image fill src={`https://zenyi1-nextjs-remy.s3.eu-north-1.amazonaws.com/${meal.image}`} alt={meal.title || 'Meal'} />
                 </div>
                 <div className={styles.headerText}>
                     <h1>{meal.title || 'Unknown Meal'}</h1>
