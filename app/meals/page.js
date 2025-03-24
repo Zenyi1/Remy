@@ -11,6 +11,10 @@ async function MealsInfo()  {
 
 }
 
+export const metadata = {
+    title: 'All Meals',
+    description: 'A list of all meals'
+}
 
 export default function Meals() {
 
