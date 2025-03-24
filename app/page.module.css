@@ -1,75 +1,94 @@
 .header {
-    display: flex;
-    gap: 3rem;
-    margin: 3rem auto;
-    width: 90%;
-    max-width: 75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 75rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    gap: 2rem;
   }
-  
-  .slideshow {
-    width: 40rem;
-    height: 25rem;
-  }
-  
-  .hero {
-    color: #ddd6cb;
-    font-size: 1.5rem;
-  }
-  
-  .hero h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #f9572a, #ffc905);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .cta {
-    font-size: 1.5rem;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .cta a {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background: linear-gradient(90deg, #f9572a, #ff9b05);
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .cta a:hover,
-  .cta a:active {
-    background: linear-gradient(90deg, #fd4715, #f9b241);
-  }
-  
-  .cta a:first-child {
-    background: transparent;
-    font-weight: normal;
-    color: #ff9b05;
-    padding-left: 0;
-  }
-  
-  .cta a:first-child:hover,
-  .cta a:first-child:active {
-    background: transparent;
-    color: #f9b241;
-  }
-  
-  .section {
-    display: flex;
-    flex-direction: column;
-    color: #ddd6cb;
-    font-size: 1.5rem;
-    max-width: 50rem;
-    width: 90%;
-    margin: 2rem auto;
-    text-align: center;
-  }
+}
+
+.slideshow {
+  width: 100%;
+  max-width: 40rem;
+  height: 20rem;
+  border: 2px solid;
+  border-color: var(--win-border-darker) var(--win-border-light) var(--win-border-light) var(--win-border-darker);
+  padding: 2px;
+  background-color: var(--win-white);
+}
+
+.hero {
+  color: var(--win-black);
+  font-size: 1.2rem;
+  background-color: var(--win-gray);
+  border: 2px solid;
+  border-color: var(--win-border-light) var(--win-border-darker) var(--win-border-darker) var(--win-border-light);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'MS Sans Serif', 'Segoe UI', 'Arial', sans-serif;
+  color: var(--win-blue);
+  margin-top: 0;
+}
+
+.cta {
+  font-size: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.cta a {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border: 2px solid;
+  border-color: var(--win-border-light) var(--win-border-darker) var(--win-border-darker) var(--win-border-light);
+  background-color: var(--win-gray);
+  color: var(--win-black);
+  font-weight: normal;
+  text-decoration: none;
+  position: relative;
+}
+
+.cta a:hover {
+  background-color: var(--win-light-gray);
+}
+
+.cta a:active {
+  border-color: var(--win-border-darker) var(--win-border-light) var(--win-border-light) var(--win-border-darker);
+  top: 1px;
+  left: 1px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  color: var(--win-black);
+  font-size: 1rem;
+  max-width: 50rem;
+  width: 90%;
+  margin: 1rem auto;
+  background-color: var(--win-gray);
+  border: 2px solid;
+  border-color: var(--win-border-light) var(--win-border-darker) var(--win-border-darker) var(--win-border-light);
+  padding: 1rem;
+}
+
+.section h2 {
+  color: var(--win-blue);
+  font-size: 1.2rem;
+  margin-top: 0;
+  border-bottom: 1px solid var(--win-border-dark);
+  padding-bottom: 0.5rem;
+}

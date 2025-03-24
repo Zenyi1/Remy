@@ -4,13 +4,72 @@
   box-sizing: border-box;
 }
 
+:root {
+  --win-blue: #0000aa;
+  --win-light-blue: #1084d0;
+  --win-gray: #c0c0c0;
+  --win-light-gray: #d4d0c8;
+  --win-dark-gray: #808080;
+  --win-black: #000000;
+  --win-white: #ffffff;
+  --win-highlight: #000080;
+  --win-border-light: #ffffff;
+  --win-border-dark: #808080;
+  --win-border-darker: #404040;
+}
+
 html {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'MS Sans Serif', 'Segoe UI', 'Arial', sans-serif;
 }
 
 body {
   margin: 0;
-  background: radial-gradient(#282c34, #282c34);
+  background-color: var(--win-gray);
+  color: var(--win-black);
+}
+
+button, 
+a.button,
+.button {
+  display: inline-block;
+  background-color: var(--win-gray);
+  color: var(--win-black);
+  border: 2px solid;
+  border-color: var(--win-border-light) var(--win-border-darker) var(--win-border-darker) var(--win-border-light);
+  box-shadow: 1px 1px 0 var(--win-border-dark);
+  padding: 4px 10px;
+  font-family: 'MS Sans Serif', 'Segoe UI', 'Arial', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  margin: 2px;
+}
+
+button:active, 
+a.button:active,
+.button:active {
+  border-color: var(--win-border-darker) var(--win-border-light) var(--win-border-light) var(--win-border-darker);
+  box-shadow: 1px 1px 0 var(--win-border-dark) inset;
+  top: 1px;
+  left: 1px;
+}
+
+.win-window {
+  background-color: var(--win-gray);
+  border: 2px solid;
+  border-color: var(--win-border-light) var(--win-border-darker) var(--win-border-darker) var(--win-border-light);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 2px;
+}
+
+.win-window-title {
+  background-color: var(--win-blue);
+  color: var(--win-white);
+  font-weight: bold;
+  padding: 2px 4px;
+  margin: -2px -2px 2px -2px;
 }
 
 .not-found,
@@ -21,22 +80,17 @@ body {
 
 .not-found h1,
 .error h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 0px;
-  font-weight: 900;
-  color: #262626;
+  font-weight: bold;
+  color: var(--win-blue);
   text-transform: uppercase;
-  background: linear-gradient(90deg, #f9572a, #ffc905);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: cover;
-  background-position: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'MS Sans Serif', 'Segoe UI', 'Arial', sans-serif;
 }
 
 .not-found p,
 .error p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  color: #ddd8d8;
+  color: var(--win-black);
 }

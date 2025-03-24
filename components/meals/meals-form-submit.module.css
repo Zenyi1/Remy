@@ -1,0 +1,28 @@
+.button {
+  border: 2px solid;
+  border-color: var(--win-border-light) var(--win-border-darker) var(--win-border-darker) var(--win-border-light);
+  padding: 0.4rem 1.5rem;
+  background: var(--win-gray);
+  cursor: pointer;
+  font-family: 'MS Sans Serif', 'Segoe UI', 'Arial', sans-serif;
+  font-size: 1rem;
+  color: var(--win-black);
+  min-width: 120px;
+  text-align: center;
+}
+
+.button:hover {
+  background: var(--win-gray-light);
+}
+
+.button:active {
+  border-color: var(--win-border-darker) var(--win-border-light) var(--win-border-light) var(--win-border-darker);
+  padding: 0.5rem 1.45rem 0.3rem 1.55rem;
+}
+
+.button:disabled {
+  background: var(--win-gray-dark);
+  color: var(--win-border-light);
+  cursor: not-allowed;
+  border-color: var(--win-border-dark);
+}

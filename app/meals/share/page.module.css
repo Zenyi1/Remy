@@ -1,98 +1,118 @@
 .header {
-    gap: 3rem;
-    margin: 3rem auto 5rem auto;
-    width: 90%;
-    max-width: 75rem;
-    color: #ddd6cb;
-    font-size: 1.5rem;
-  }
-  
-  .header h1 {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .highlight {
-    background: linear-gradient(90deg, #f9572a, #ff8a05);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .main {
-    width: 90%;
-    max-width: 75rem;
-    margin: 3rem auto;
-    color: white;
-  }
-  
-  .form {
-    max-width: 50rem;
-  }
-  
-  .form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #b3aea5;
-    font-weight: bold;
-  }
-  
-  .form input,
-  .form textarea {
-    display: block;
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    border: 1px solid #454952;
-    background: #1c2027;
-    font-size: 1.25rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #ddd6cb;
-  }
-  
-  .form input:focus,
-  .form textarea:focus {
-    outline-color: #f99f2a;
-    background-color: #1f252d;
-  }
-  
-  .row {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .row p {
-    width: 100%;
-  }
-  
-  .actions {
-    text-align: right;
-  }
-  
-  .actions button {
-    border: 0;
-    padding: 0.75rem 2rem;
-    background: linear-gradient(90deg, #f9572a, #ff9b05);
-    border: none;
-    color: #ffffff;
-    border-radius: 2px;
-    cursor: pointer;
-    font: inherit;
-    font-size: 1.25rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .actions button:hover,
-  .actions button:focus {
-    background: linear-gradient(90deg, #fd4715, #f9b241);
-  }
-  
-  .actions button:disabled,
-  .actions button:hover:disabled,
-  .actions button:focus:disabled {
-    background: #ccc;
-    color: #979797;
-    cursor: not-allowed;
-  }
+  gap: 1rem;
+  margin: 1.5rem auto 2rem auto;
+  width: 90%;
+  max-width: 75rem;
+  color: var(--win-black);
+  font-size: 1rem;
+  background-color: var(--win-gray);
+  border: 2px solid;
+  border-color: var(--win-border-light) var(--win-border-darker) var(--win-border-darker) var(--win-border-light);
+  padding: 1rem;
+}
+
+.header h1 {
+  font-family: 'MS Sans Serif', 'Segoe UI', 'Arial', sans-serif;
+  color: var(--win-blue);
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.highlight {
+  color: var(--win-highlight);
+  font-weight: bold;
+}
+
+.main {
+  width: 90%;
+  max-width: 75rem;
+  margin: 1.5rem auto;
+  color: var(--win-black);
+}
+
+.form {
+  max-width: 50rem;
+  background-color: var(--win-gray);
+  border: 2px solid;
+  border-color: var(--win-border-light) var(--win-border-darker) var(--win-border-darker) var(--win-border-light);
+  padding: 1rem;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-family: 'MS Sans Serif', 'Segoe UI', 'Arial', sans-serif;
+  color: var(--win-black);
+  font-weight: bold;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid;
+  border-color: var(--win-border-darker) var(--win-border-light) var(--win-border-light) var(--win-border-darker);
+  background: var(--win-white);
+  font-size: 1rem;
+  font-family: 'MS Sans Serif', 'Segoe UI', 'Arial', sans-serif;
+  color: var(--win-black);
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 2px solid var(--win-blue);
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.row p {
+  width: 100%;
+}
+
+.actions {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.actions button {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border: 2px solid;
+  border-color: var(--win-border-light) var(--win-border-darker) var(--win-border-darker) var(--win-border-light);
+  background-color: var(--win-gray);
+  color: var(--win-black);
+  font-weight: normal;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1rem;
+  font-family: 'MS Sans Serif', 'Segoe UI', 'Arial', sans-serif;
+}
+
+.actions button:hover {
+  background-color: var(--win-light-gray);
+}
+
+.actions button:active {
+  border-color: var(--win-border-darker) var(--win-border-light) var(--win-border-light) var(--win-border-darker);
+  top: 1px;
+  left: 1px;
+}
+
+.actions button:disabled,
+.actions button:hover:disabled,
+.actions button:focus:disabled {
+  background-color: var(--win-light-gray);
+  color: var(--win-dark-gray);
+  cursor: not-allowed;
+  border-color: var(--win-border-light) var(--win-border-darker) var(--win-border-darker) var(--win-border-light);
+  top: 0;
+  left: 0;
+}
